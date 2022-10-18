@@ -30,13 +30,30 @@ endinterface
 
 (*synthesize*)
 module mkbitmanip(Ifc_bitmanip);
-    method ActionValue#(BBoxOutput) mav_inputs(Bit#(32) instr, Bit#(XLEN) rs1, Bit#(XLEN) rs2);
-      let bbox_inp = BBoxInput { instr : instr,
-                                 rs1   : rs1,
-                                 rs2   : rs2
-                               };
-      return fn_compute(bbox_inp);
-    endmethod
+
+  /*doc:reg: Register to store input.
+    Adding this register to make the design sequential so that multiple tests
+    can be run at the same time from cocotb. And also facing some difficulties to 
+    run combinational design from cocotb, so added this.
+  */
+  Reg#(BBoxInput) rg_input <- mkReg(unpack(0));
+
+  /*doc:wire: Wire which returns the output.
+  */
+  Wire#(BBoxOutput) wr_output <- mkDWire(unpack(0));
+
+  rule rl_compute;
+    wr_output <= fn_compute(rg_input);
+  endrule
+
+  method ActionValue#(BBoxOutput) mav_inputs(Bit#(32) instr, Bit#(XLEN) rs1, Bit#(XLEN) rs2);
+    let bbox_inp = BBoxInput { instr : instr,
+                               rs1   : rs1,
+                               rs2   : rs2
+                             };
+    rg_input <= bbox_inp;
+    return wr_output;
+  endmethod
 endmodule: mkbitmanip
 
 endpackage: bitmanip
