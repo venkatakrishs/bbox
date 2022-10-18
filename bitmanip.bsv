@@ -24,6 +24,7 @@ import bbox_types :: *;
 interface Ifc_bitmanip;
   (*result = "bbox_out"*)
   (*prefix = ""*)
+  (*always_ready, always_enabled*)
   method ActionValue#(BBoxOutput) mav_inputs(Bit#(32) instr, Bit#(XLEN) rs1, Bit#(XLEN) rs2);
 endinterface
 
