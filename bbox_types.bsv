@@ -9,8 +9,8 @@ package bbox_types;
 
 typedef struct {
   Bit#(32) instr;
-  Bit#(XLEN) src1;
-  Bit#(XLEN) src2;
+  Bit#(XLEN) rs1;
+  Bit#(XLEN) rs2;
 } BBoxInput deriving (Bits, Eq, FShow);
 
 typedef struct {
