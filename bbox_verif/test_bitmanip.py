@@ -11,13 +11,13 @@ from cocotb.regression import TestFactory
 from bitmanip_ref_model import bitmanip_rm
 
 #// DUT Ports:
-#// Name                         I/O  size props
-#// bbox_out                       O    65
-#// CLK                            I     1 unused
-#// RST_N                          I     1 unused
+#// Name                         I/O  size 
+#// bbox_out                       O    65/33
+#// CLK                            I     1 
+#// RST_N                          I     1 
 #// instr                          I    32
-#// rs1                            I    64
-#// rs2                            I    64
+#// rs1                            I    64/32
+#// rs2                            I    64/32
 #//   (instr, rs1, rs2) -> bbox_out
 
 
