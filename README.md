@@ -32,7 +32,7 @@ $ make clean_build
 ### More info for Verification
 
 ```bash
-1. First time run - $ make simulate
+1. First-time run - $ make simulate
    Subsequent runs - $ make clean_build
    		     $ make simulate
 ```
