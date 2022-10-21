@@ -10,8 +10,8 @@ Students are required to read through the Bit Manipulation Spec by RISC-V and im
 	- bbox_types.bsv - The structures, enum, bsc macors are defined here.
 	- Zbb.bsv - A sample implementation of ANDN instruction is present. It is needed to be completed with all the other required instructions.
 - bbox_verif/ - The directory where the scripts required for running the cocotb tests are present. The files present are:
-	- test_bbox.py - 
-	- bbox_ref_model.py - 
+	- test_bbox.py - This file consists cocotb testbench for bbox dut. For more info, check Task description provided in this file.
+	- bbox_ref_model.py - This file consists reference model which used in verifying the design (DUT). For more info, check Task description provided 				in this file.
 - docs/ - The directory where the bitmanip spec pdf and instructions for Tool Setup are mentioned.
 
 ### Steps to run:
@@ -29,3 +29,19 @@ $ make simulate
 ```bash
 $ make clean_build
 ```
+### More info for Verification
+
+```bash
+1. First time run - $ make simulate
+   Subsequent runs - $ make clean_build
+   		     $ make simulate
+```
+```bash
+2. To check waveforms, - Once simulation completes, dump.vcd is created in bbox/
+    $ gtkwave dump.vcd
+```    
+```bash    
+3. GTKWave installation - 
+	$ sudo apt update
+	$ sudo apt install gtkwave
+```    
