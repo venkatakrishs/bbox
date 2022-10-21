@@ -8,7 +8,7 @@ from cocotb.binary import BinaryValue
 from cocotb.clock import Clock
 from cocotb.regression import TestFactory
 
-from bitmanip_ref_model import bitmanip_rm
+from bbox_ref_model import bbox_rm
 
 #// DUT Ports:
 #// Name                         I/O  size 
@@ -72,7 +72,7 @@ async def TB(dut, XLEN, instr, instr_name, single_opd, num_of_tests):
     for i in range (num_of_tests):
         rs1 = random.randint(0,(2**XLEN)-1) 
         rs2 = random.randint(0,(2**XLEN)-1)
-        rm_result = bitmanip_rm(instr, rs1, rs2, XLEN)
+        rm_result = bbox_rm(instr, rs1, rs2, XLEN)
     
         await input_driver(dut, instr, rs1, rs2, single_opd)
         dut_result = await output_monitor(dut)

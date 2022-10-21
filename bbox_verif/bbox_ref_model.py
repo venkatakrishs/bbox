@@ -1,7 +1,7 @@
 
 #Reference model
 # if instr has single operand, take rs1 as operand
-def bitmanip_rm(instr, rs1, rs2, XLEN):
+def bbox_rm(instr, rs1, rs2, XLEN):
     valid = '0'
     if instr == 1:
         res = rs1 & ~rs2
