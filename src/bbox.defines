@@ -1,1 +1,4 @@
+// Add instruction macors here which can be used in the 
+// case statement for understandability and easy modifications.
+
 `define ANDN 'b1
