@@ -1,19 +1,5 @@
 package bbox;
 
-/* INCLUDE: Logger.bsv
-   This file is useful to include Debug statements 
-   Usage: 
-   logLevel(<name>, <verbosity_level>, $format("Intermediate step1: %d, step2: %d", step1_value, step2_value))
-   The <name> field is better to be file name.
-   The <verbosity_level> is better to be 0 for all debug statements to be printed. 
-
-   While simulation, to print the debug statements need to include some statements like below in the sim executable:
-   ./out +m<name> +l<verbosity_level>
-
-   NOTE: There is no semicolon at the end.
-*/
-`include "Logger.bsv" 
-
 //This file does the BitManip computation and returns the result. 
 `include "compute.bsv"
 
@@ -55,9 +41,11 @@ module mkbbox(Ifc_bbox);
                              };
     rg_input <= bbox_inp;
   endmethod
+
   method BBoxOutput mv_output;
     return wr_output;
   endmethod
+
 endmodule: mkbbox
 
 endpackage: bbox
