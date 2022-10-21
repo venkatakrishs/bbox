@@ -9,3 +9,5 @@ bbox_verif/__pycache__
 *.swp
 
 bbox_verif/dump.vcd
+
+bbox_verif/results.xml
