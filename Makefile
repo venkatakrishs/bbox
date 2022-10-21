@@ -21,5 +21,5 @@ clean_build:
 	@make clean
 	@rm -rf $(VERILOGDIR) $(BUILDDIR)
 	@rm -rf bbox_verif/__pycache__
-	@rm results.xml
+	@rm -rf results.xml
 	@echo "Cleaned"
