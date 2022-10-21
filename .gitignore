@@ -2,12 +2,12 @@ intermediate/
 
 verilog/
 
-bbox_verif/sim_build/
+sim_build/
 
 bbox_verif/__pycache__
 
 *.swp
 
-bbox_verif/dump.vcd
+dump.vcd
 
-bbox_verif/results.xml
+results.xml
