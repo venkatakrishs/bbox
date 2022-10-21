@@ -1,5 +1,5 @@
-TOPFILE=bitmanip.bsv
-BSVINCDIR=.:%/Libraries
+TOPFILE=bbox.bsv
+BSVINCDIR=.:%/Libraries:./src
 BSCDEFINES=RV64
 VERILOGDIR=verilog/
 BUILDDIR=intermediate/
@@ -13,5 +13,5 @@ generate_verilog:
 
 .PHONY: clean
 clean:
-	@echo "Cleaning"
 	@rm -rf $(VERILOGDIR) $(BUILDDIR)
+	@echo "Cleaned"
