@@ -1,10 +1,10 @@
 
 '''
-File Description: This file consists reference model which used in verifying the design
+File Description: This file consists reference model which used in verifying the design (DUT).
 
 TODO:
 Task Description: Add logic for all instructions. One instruction is implemented as an example. 
-                  Note - The value of ANDN in bbox.defines is a temp value, it needed to be changed according to spec.
+                  Note - The value of instr (ANDN) is a temp value, it needed to be changed according to spec.
 
 Note - if instr has single operand, take rs1 as an operand
 '''
