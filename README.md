@@ -4,6 +4,7 @@ Students are required to read through the Bit Manipulation Spec by RISC-V and im
 
 ### The repo structure is as follows:
 - bbox.bsv - The top module of the design. Has the interface definition and module definition which calls the BitManip calculation.
+- Makefile - Has make commands to generate_verilog and simulate.
 - src/ - The directory where the files which the student should edit are present here. The files present are
 	- compute.bsv - The top function which selects between the functions implemented for the spec depending on the instruction.
 	- bbox.defines - The function which has the macro definition used to select between the instructions.
@@ -29,6 +30,8 @@ $ make simulate
 ```bash
 $ make clean_build
 ```
+
+**_NOTE:_** Change BSCDEFINES macro in Makefile to RV64/RV32 according to use. 
 
 ### More info for Verification
 
