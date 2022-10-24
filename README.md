@@ -12,7 +12,7 @@ Students are required to read through the Bit Manipulation Spec by RISC-V and im
 - bbox_verif/ - The directory where the scripts required for running the cocotb tests are present. The files present are:
 	- test_bbox.py - 
 	- bbox_ref_model.py - 
-- docs/ - The directory where the bitmanip spec pdf and instructions for Tool Setup are mentioned.
+- docs/ - The directory where the bitmanip spec pdf, instructions for Tool Setup and some FAQs are present. 
 
 ### Steps to run:
 Make sure you have installed all the required tools as mentioned in docs/Tool_setup.pdf and the python environment is activated.
