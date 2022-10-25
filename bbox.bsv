@@ -1,3 +1,13 @@
+
+//See LICENSE.iitm for license details
+/*
+
+Author : Mouna Krishna
+Email id : mounakrishna@mindgrovetech.in
+Details: The top module performing BitManip operation.
+
+--------------------------------------------------------------------------------------------------
+*/
 package bbox;
 
 //This file does the BitManip computation and returns the result. 

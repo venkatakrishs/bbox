@@ -1,3 +1,14 @@
+//See LICENSE.iitm for license details
+/*
+
+Author : Mouna Krishna
+Email id : mounakrishna@mindgrovetech.in
+Details: The top function which calls the required function depending 
+         on the instruction.
+
+--------------------------------------------------------------------------------------------------
+*/
+
 /****** Imports *******/
 `include "bbox.defines"
 import bbox_types :: *;

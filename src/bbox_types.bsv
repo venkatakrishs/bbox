@@ -1,6 +1,13 @@
-/*doc: bbox_types: The file contains the structures, macors etc.
-  Any new structures, enum, union tagged are expected to be written 
-  and used everywhere
+//See LICENSE.iitm for license details
+/*
+
+Author : Mouna Krishna
+Email id : mounakrishna@mindgrovetech.in
+Details: The file contains the structures, macors etc.
+         Any new structures, enum, union tagged are expected to be written 
+         and used everywhere
+
+--------------------------------------------------------------------------------------------------
 */
 
 package bbox_types;
