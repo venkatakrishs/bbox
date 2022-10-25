@@ -1,7 +1,13 @@
-
+#See LICENSE.iitm for license details
 '''
-File Description: This file consists reference model which used in verifying the design (DUT).
 
+Author   : Santhosh Pavan
+Email id : santhosh@mindgrovetech.in
+Details  : This file consists reference model which is used in verifying the bbox design (DUT).
+
+--------------------------------------------------------------------------------------------------
+'''
+'''
 TODO:
 Task Description: Add logic for all instructions. One instruction is implemented as an example. 
                   Note - The value of instr (ANDN) is a temp value, it needed to be changed according to spec.
